@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://www.publicdomainpictures.net/pictures/370000/velka/himmel-wolken-wetter-hintergrund-1601103029WlU.jpg);
+    -webkit-background-size: 100%;
+}
+
+.title {
+    color: rgb(92, 0, 128);
+}
+
+.text-center {
+    text-align: center;
+    border: 3px solid red;
+    background-color: #fff;
+}
+
+.btn {
+    margin-top: 10px;
+}
