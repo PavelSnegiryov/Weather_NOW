@@ -3,20 +3,44 @@
 }
 
 body {
-    background: url(https://www.publicdomainpictures.net/pictures/370000/velka/himmel-wolken-wetter-hintergrund-1601103029WlU.jpg);
-    -webkit-background-size: 100%;
+    background: url(img/main_bg.jpg) center;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-center {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    transform: translateX(-12px);
+    border: 3px solid red;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .title {
     color: rgb(92, 0, 128);
-}
-
-.text-center {
-    text-align: center;
-    border: 3px solid red;
-    background-color: #fff;
+    font-size: 48px;
 }
 
 .btn {
     margin-top: 10px;
+}
+
+@media (max-width: 575px) {
+    .text-center {
+        transform: translateX(0);
+        width: fit-content;
+        height: 50px;
+    }
+
+    .title {
+        font-size: 43px;
+        line-height: 0;
+        transform: translateY(10px)
+    }
 }
